@@ -113,11 +113,6 @@ print(__name__)
 
 if __name__ == "__main__":
 
-    from py2puml.py2puml import py2puml
-
-    # outputs the PlantUML content in the terminal
-    print(''.join(py2puml('', 'py2puml.domain')))
-
     Carrot.price = 15.0
     Cucumber.price = 120.0
     Tomato.price = 250.0
