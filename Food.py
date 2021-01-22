@@ -72,7 +72,7 @@ class Zucchini(Vegetable):
         return "Dark Green"
 
 
-class Eggplant():
+class Eggplant(Vegetable):
 
     def get_default_color(self):
         return "Light Green"
@@ -109,8 +109,14 @@ class WashedCarrot(Carrot):
         super().__init__(self, weight, color)
         self.dirty = False
 
+print(__name__)
 
 if __name__ == "__main__":
+
+    from py2puml.py2puml import py2puml
+
+    # outputs the PlantUML content in the terminal
+    print(''.join(py2puml('', 'py2puml.domain')))
 
     Carrot.price = 15.0
     Cucumber.price = 120.0
@@ -132,6 +138,7 @@ if __name__ == "__main__":
 
 
     basket = []
+
     for i in range(5):
         basket.append(Carrot(random.randint(80, 120)))
     for i in range(3):
