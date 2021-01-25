@@ -106,7 +106,7 @@ class Carrot(RootСrop):
 class WashedCarrot(Carrot):
 
     def __init__(self, weight=0, color=None):
-        super().__init__(self, weight, color)
+        super().__init__(weight, color)
         self.dirty = False
 
 print(__name__)
